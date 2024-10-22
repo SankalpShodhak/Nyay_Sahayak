@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyay Sahayak - Lawyer Login</title>
+    <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="index-lawyer.html">
+        <img src="logo2.png" alt="Nyay Sahayak" />
+    </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index-lawyer.html">Home</a></li>
+                <li><a href="index-lawyer.html#benefits">Benefits</a></li>
+                <li><a href="index-lawyer.html#why-join">Why join?</a></li>
+                <li><a href="index-lawyer.html#pricing">Price & Plans</a></li>
+            </ul>
+        </nav>
+        <a href="signup.html" class="cta-btn">Lawyer Sign Up</a>
+    </header>
+
+    <!-- Login Form Section for Lawyers -->
+    <section class="login-lawyer">
+        <h2>Lawyer Login</h2>
+        <form class="login-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="captcha">Captcha</label>
+                <div class="captcha-box">
+                    <span id="captcha-text">12abX</span> <!-- Randomly generated text -->
+                    <input type="text" id="captcha" name="captcha" placeholder="Enter the captcha" required>
+                </div>
+            </div>
+            <button type="submit" class="cta-btn">Login</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Nyay Sahayak. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script to generate random captcha -->
+    <script>
+        function generateCaptcha() {
+            const captchaText = Math.random().toString(36).substring(2, 7); // Random 5-char string
+            document.getElementById("captcha-text").innerText = captchaText;
+        }
+
+        // Call generateCaptcha when the page loads
+        window.onload = generateCaptcha;
+    </script>
+</body>
+</html>

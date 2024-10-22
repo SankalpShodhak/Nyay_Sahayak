@@ -1,0 +1,239 @@
+
+
+
+/* General page styles */
+body {
+    margin: 0;
+    padding-top: 70px; /* Add padding to prevent content from being hidden under the navbar */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Black page background */
+body.page-black {
+    background-color: black; /* Background set to black */
+    color: white; /* Text color is white */
+}
+
+/* White page background */
+body.page-white {
+    background-color: white; /* Background set to white */
+    color: black; /* Text color is black */
+}
+
+/* Navigation Bar */
+.logo img {
+    height: 100px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black; /* Solid color for visibility */
+    color: white;
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Aligns it at the top */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Ensures it takes the full width */
+    z-index: 1000; /* Keeps it above other content */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative; /* Position relative for dropdown */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit; /* Inherit the text color from body */
+    font-size: 18px;
+    padding: 10px 15px; /* Added padding for better click area */
+}
+
+.arrow {
+    margin-left: 5px; /* Spacing between text and arrow */
+    font-size: 12px; /* Adjust size as needed */
+}
+
+/* Call to Action Button */
+.cta-btn {
+    padding: 10px 15px;
+    background-color: #FFC0CB; /* Pink button */
+    color: black; /* Black text for contrast */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+/* Dropdown Menu */
+.dropdown {
+    display: none; /* Hide dropdowns by default */
+    position: absolute; /* Positioning for dropdown */
+    background-color: #FFC0CB; /* Pink background for dropdown */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 0; /* Padding for dropdown */
+    z-index: 1000; /* Keeps dropdown above content */
+}
+
+.dropdown li {
+    list-style: none; /* Remove list style */
+}
+
+.dropdown a {
+    padding: 10px 20px; /* Padding for dropdown items */
+    color: black; /* Text color */
+    display: block; /* Block display for items */
+}
+
+.dropdown a:hover {
+    background-color: #FF92A5; /* Hover effect for dropdown items */
+}
+
+/* Show dropdown on hover */
+.nav-links li:hover .dropdown {
+    display: block; /* Show dropdown when hovered */
+}
+
+/* Services Offered Section */
+.services-offered {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-around; /* Space around for alignment */
+    padding: 20px;
+}
+
+/* Service Card Styles */
+.service-card {
+    background: #F9F9F9; /* Light background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px;
+    margin: 15px;
+    flex: 0 1 calc(30% - 30px); /* Responsive sizing */
+    position: relative; /* For absolute positioning */
+}
+
+
+.service-card h3 {
+    cursor: pointer; /* Indicate that this is clickable */
+}
+
+/* About Document Drafting Section */
+
+
+.about-drafting {
+    padding: 50px;
+    background-color: black; /* Black background for About section */
+    color: white; /* White text */
+    text-align: center;
+}
+
+.about-drafting h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-drafting p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Footer Styles */
+.footer {
+    background-color: #222; /* Black background */
+    color: white; /* White text */
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none; /* Remove list style */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+    display: inline; /* Inline display for links */
+    margin: 0 10px; /* Space between links */
+}
+
+.footer-links a {
+    text-decoration: none; /* No underline */
+    color: white; /* White text color */
+}
+
+/* Services Offered Section */
+.services-offered {
+    padding: 50px;
+    background-color: white; /* White background for Services section */
+    color: black; /* Black text */
+    text-align: center;
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around; /* Evenly space items */
+    gap: 20px; /* Space between the service cards */
+}
+
+/* Service Card Styles */
+.service-card {
+    background-color: #FFC0CB; /* Pink background for service boxes */
+    color: black; /* Black text inside service cards */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 300px; /* Grow to fill space, but not smaller than 300px */
+    max-width: 300px; /* Max width for each card */
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+.service-card {
+    position: relative; /* Position relative for dropdown */
+}
+
+.sub-dropdown {
+    display: none; /* Hide sub-dropdowns by default */
+    position: absolute; /* Positioning for sub-dropdown */
+    background-color: rgb(20, 151, 171); /* Background color for sub-dropdown */
+    border: 1px solid #ccc; /* Border for sub-dropdown */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Keeps it above content */
+    padding: 10px 0; /* Padding for sub-dropdown */
+    min-width: 200px; /* Minimum width for sub-dropdown */
+}
+
+.service-card:hover .sub-dropdown {
+    display: block; /* Show sub-dropdown on hover */
+}
+
+.sub-dropdown li {
+    list-style: none; /* Remove list style */
+}
+
+.sub-dropdown a {
+    padding: 10px 20px; /* Padding for sub-dropdown items */
+    color: black; /* Text color */
+    display: block; /* Block display for items */
+    text-decoration: none; /* Remove underline */
+}
+
+.sub-dropdown a:hover {
+    background-color: #f0f0f0; /* Hover effect for sub-dropdown items */
+}
+
+.about-drafting h2, p {
+    text-align: center;
+}
+

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Profiles</title>
+    <link rel="stylesheet" href="consultation.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo2.png" alt="Nyay Sahayak Logo" />
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="document-drafting.html">Document Drafting <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Business & Corporate</a></li>
+                        <li><a href="#">Family & Personal</a></li>
+                        <li><a href="#">Property & Real Estate</a></li>
+                        <li><a href="#">Cyber Crime</a></li>
+                        <li><a href="#">Intellectual Property</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="resource.html">Resource Library <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="">Books</a></li>
+                        <li><a href="#">CrPC</a></li>
+                        <li><a href="#">IPC</a></li>
+                        <li><a href="#">Know The Law</a></li>
+                        <li><a href="#">Lawyer's Speak</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="registration.html">Registration <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Company & Business</a></li>
+                        <li><a href="#">Taxation & Financial</a></li>
+                        <li><a href="#">Property & Real Estate</a></li>
+                        <li><a href="#">NRI Legal Services</a></li>
+                        <li><a href="#">Immigration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="compliance.html">Compliance Services <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Taxation & Financial</a></li>
+                        <li><a href="#">Business & Corporate</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="consultation.html">Consultation </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="signup-user.html" class="cta-btn">Login / Sign Up</a>
+    </header>
+
+    <main>
+        <div class="content-container" style="padding-right: -250px;">
+            <aside class="sidebar">
+                <h2>Filters</h2>
+                <h3>Select Your Preferences</h3> <!-- Additional heading -->
+                <div class="filter-group">
+                    <label for="city">City:</label>
+                    <select id="city">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="pune">Pune</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="surat">Surat</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="practice-area">Area of Practice:</label>
+                    <select id="practice-area">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="family-law">Family Law</option>
+                        <option value="criminal-law">Criminal Law</option>
+                        <option value="bussiness">Bussiness Law</option>
+                        <option value="finance-law">Finance Law</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="court">Court:</label>
+                    <select id="court">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="court1">Supreme Court</option>
+                        <option value="court2">High Court</option>
+                        <option value="court3">District Court</option>
+                        <option value="court4">Lower Court</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="5">4 or above Stars</option>
+                        <option value="4">3 or above Stars</option>
+                        <option value="4">2 or above Stars</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="language">Language:</label>
+                    <select id="language">
+                        <option value="" disabled selected>Choose</option>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="bengali">Bengali</option>
+                        <option value="telugu">Telugu</option>
+                        <option value="marathi">Marathi</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="urdu">Urdu</option>
+                        <option value="gujarati">Gujarati</option>
+                        <option value="malayalam">Malayalam</option>
+                        <option value="kannada">Kannada</option>
+                        <option value="punjabi">Punjabi</option>
+                        <option value="odisha">Odia</option>
+                        <option value="assamese">Assamese</option>
+                    </select>
+                </div> 
+                <button class="search-btn">Search</button> <!-- Search button -->
+            </aside>
+            <br>    
+        </div>  
+        <div style="margin-right: 350px;">                  
+            <h1 class="lawyer-heading" >Lawyer Details</h1> 
+            <!-- <br />
+            <br /> -->
+            <div class="lawyer-container">
+                <br>
+                <br>
+                <div class="lawyer-box">
+                    <img src="lawyer2.png" alt="Lawyer Photo" class="lawyer-photo">
+                    <div class="lawyer-details">
+                        <h2>Kalpana Sharma</h2>
+                        <div class="city-rating">
+                            <p class="location"><img src="loc.png" alt="Location Icon" class="icon"> Delhi</p>
+                            <div class="rating">
+                                <span>Rating: 5</span> <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="practice-experience">
+                            <p class="practice"><img src="court-icon.png" alt="Court Icon" class="icon"> family lawer</p>
+                            <p class="experience">Experience: 10 years</p>
+                            <p class="court">Court: High court</p>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Now</a>
+                    </div>
+                </div>
+                
+                
+            
+                <!-- Repeat lawyer-box for more lawyers -->
+                <div class="lawyer-box">
+                    <img src="lawyer1.png" alt="Lawyer Photo" class="lawyer-photo">
+                    <div class="lawyer-details">
+                        <h2>Suraj Mishra</h2>
+                        <div class="city-rating">
+                            <p class="location"><img src="loc.png" alt="Location Icon" class="icon"> Mumbai</p>
+                            <div class="rating">
+                                <span>Rating: 4</span> <span class="stars">⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="practice-experience">
+                            <p class="practice"><img src="court-icon.png" alt="Court Icon" class="icon"> criminal lawer</p>
+                            <p class="experience">Experience: 15 years</p>
+                            <p class="court">Court: Supreme court</p>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Now</a>
+                    </div>
+                </div>
+                
+            
+                <div class="lawyer-box">
+                    <img src="lawyer3.png" alt="Lawyer Photo" class="lawyer-photo">
+                    <div class="lawyer-details">
+                        <h2>Lawyer Name</h2>
+                        <div class="city-rating">
+                            <p class="location"><img src="loc.png" alt="Location Icon" class="icon"> Bangalore</p>
+                            <div class="rating">
+                                <span>Rating: 3</span> <span class="stars">⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="practice-experience">
+                            <p class="practice"><img src="court-icon.png" alt="Court Icon" class="icon"> Bussiness lawyer</p>
+                            <p class="experience">Experience: 14 years</p>
+                            <p class="court">Court: High court</p>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Now</a>
+                    </div>
+                </div>
+                
+                <div class="lawyer-box">
+                    <img src="lawyer4.png" alt="Lawyer Photo" class="lawyer-photo">
+                    <div class="lawyer-details">
+                        <h2>Lawyer Name</h2>
+                        <div class="city-rating">
+                            <p class="location"><img src="loc.png" alt="Location Icon" class="icon"> Pune </p>
+                            <div class="rating">
+                                <span>Rating: 4</span> <span class="stars">⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="practice-experience">
+                            <p class="practice"><img src="court-icon.png" alt="Court Icon" class="icon"> family Lawyer</p>
+                            <p class="experience">Experience: 12 years</p>
+                            <p class="court">Court: District court</p>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Now</a>
+                    </div>
+                </div>
+                
+                <div class="lawyer-box">
+                    <img src="lawyer5.png" alt="Lawyer Photo" class="lawyer-photo">
+                    <div class="lawyer-details">
+                        <h2>Lawyer Name</h2>
+                        <div class="city-rating">
+                            <p class="location"><img src="loc.png" alt="Location Icon" class="icon">Lucknow</p>
+                            <div class="rating">
+                                <span>Rating: 4</span> <span class="stars">⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="practice-experience">
+                            <p class="practice"><img src="court-icon.png" alt="Court Icon" class="icon"> finance lawer</p>
+                            <p class="experience">Experience: 20 years</p>
+                            <p class="court">Court: Supreme court</p>
+                        </div>
+                        <a href="#" class="contact-btn">Contact Now</a>
+                    </div>
+                </div>
+                
+            
+                <!-- Add more lawyer boxes as needed -->
+           </div> 
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Nyay Sahayak. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

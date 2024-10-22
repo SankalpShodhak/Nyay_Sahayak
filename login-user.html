@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyay Sahayak - Lawyer Login</title>
+    <link rel="stylesheet" href="style-login-user.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo2.png" alt="Nyay Sahayak Logo" />
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="document-drafting.html">Document Drafting <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Business & Corporate</a></li>
+                        <li><a href="#">Family & Personal</a></li>
+                        <li><a href="#">Property & Real Estate</a></li>
+                        <li><a href="#">Cyber Crime</a></li>
+                        <li><a href="#">Intellectual Property</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="resource.html">Resource Library <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="">Books</a></li>
+                        <li><a href="#">CrPC</a></li>
+                        <li><a href="#">IPC</a></li>
+                        <li><a href="#">Know The Law</a></li>
+                        <li><a href="#">Lawyer's Speak</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="registration.html">Registration <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Company & Business</a></li>
+                        <li><a href="#">Taxation & Financial</a></li>
+                        <li><a href="#">Property & Real Estate</a></li>
+                        <li><a href="#">NRI Legal Services</a></li>
+                        <li><a href="#">Immigration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="compliance.html">Compliance Services <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Taxation & Financial</a></li>
+                        <li><a href="#">Business & Corporate</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="consultation.html">Consultation </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="signup-user.html" class="cta-btn">Sign Up</a>
+    </header>
+
+    <!-- Login Form Section for Lawyers -->
+    <section class="login-lawyer">
+        <h2>User Login</h2>
+        <form class="login-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="captcha">Captcha</label>
+                <div class="captcha-box">
+                    <span id="captcha-text">12abX</span> <!-- Randomly generated text -->
+                    <input type="text" id="captcha" name="captcha" placeholder="Enter the captcha" required>
+                </div>
+            </div>
+            <button type="submit" class="cta-btn">Login</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Nyay Sahayak. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script to generate random captcha -->
+    <script>
+        function generateCaptcha() {
+            const captchaText = Math.random().toString(36).substring(2, 7); // Random 5-char string
+            document.getElementById("captcha-text").innerText = captchaText;
+        }
+
+        // Call generateCaptcha when the page loads
+        window.onload = generateCaptcha;
+    </script>
+</body>
+</html>

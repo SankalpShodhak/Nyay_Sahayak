@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyay Sahayak - Lawyer Portal</title>
+    <link rel="stylesheet" href="styles-lawyer.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="index.html">
+        <img src="logo2.png" alt="Nyay Sahayak" />
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#why-join">Why Join?</a></li>
+                <li><a href="#pricing">Price & Plans</a></li>
+            </ul>
+        </nav>
+        <a href="signup.html" class="cta-btn">Lawyer Login / Sign Up</a>
+
+    </header>
+
+    <!-- Hero Section for Lawyers -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Expand Your Legal Practice</h1>
+            <p>Join Nyay Sahayak and connect with clients in need of legal expertise. Manage cases, offer consultations, and grow your practice effortlessly.</p>
+            <a href="signup.html" class="cta-btn">Join as a Lawyer</a>
+        </div>
+       
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <h2>Benefits of Joining Nyay Sahayak</h2>
+        <div class="benefit-cards">
+            <div class="benefit-card">
+                
+                <h3>Increased Visibility</h3><br />
+                <p>Get discovered by potential clients through our platform, enhancing your reach.</p>
+            </div>
+            <div class="benefit-card">
+                
+                <h3>Networking Opportunities</h3><br />
+                <p>Connect with fellow legal professionals and build a strong network.</p>
+            </div>
+            <div class="benefit-card">
+                
+                <h3>Streamlined Workflow</h3><br />
+                <p>Manage cases and documents efficiently, saving time and resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="why-join" id="why-join">
+        <h2>Why Join Nyay Sahayak?</h2>
+        <div class="why-join-cards">
+            <div class="why-join-card">
+             
+                <h3>Expert Guidance</h3><br />
+                <p>Receive advice and mentorship from experienced lawyers in the field.</p>
+            </div>
+            <div class="why-join-card">
+              
+                <h3>Comprehensive Resources</h3><br />
+                <p>Access a wealth of legal resources, templates, and tools to support your practice.</p>
+            </div>
+            <div class="why-join-card">
+                
+                <h3>Client Support</h3><br />
+                <p>Enjoy dedicated support for your clients, ensuring their needs are met effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans & Pricing Section -->
+    <section class="pricing" id="pricing">
+        <h2>Plans & Pricing</h2>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h2>Basic Plan</h2>
+                <p class="price"><span class="rupee-symbol">&#8377;</span>
+                    499/month</p>
+                <ul>
+                    <li>Access to basic features</li>
+                    <li>Up to 5 client cases</li>
+                    <li>Email support</li>
+                </ul>
+                <a href="#" class="cta-btn1">Select Plan</a>
+            </div>
+            <div class="pricing-card">
+                <h2>Professional Plan</h2>
+                <p class="price"><span class="rupee-symbol">&#8377;</span>
+                    999/month</p>
+                <ul>
+                    <li>All basic features</li>
+                    <li>Up to 20 client cases</li>
+                    <li>Priority email support</li>
+                </ul>
+                <a href="#" class="cta-btn1">Select Plan</a>
+            </div>
+            <div class="pricing-card">
+                <h2>Premium Plan</h2>
+                <p class="price"><span class="rupee-symbol">&#8377;</span>
+                    1499/month</p>
+                <ul>
+                    <li>All professional features</li>
+                    <li>Unlimited client cases</li>
+                    <li>24/7 support</li>
+                </ul>
+                <a href="#" class="cta-btn1">Select Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section for Lawyers -->
+    <section class="features">
+        <h2>Tools for Lawyers</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+              
+                <h3>Client Management</h3><br />
+                <p>Track client cases and consultations with ease through our intuitive dashboard.</p>
+            </div>
+            <div class="feature-card">
+                
+                <h3>Online Consultations</h3><br />
+                <p>Offer legal consultations directly on the platform, helping clients get immediate help.</p>
+            </div>
+            <div class="feature-card">
+                
+                <h3>Document Assistance</h3><br />
+                <p>Create, review, and manage legal documents efficiently through integrated tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Nyay Sahayak</h2>
+        <p>Nyay Sahayak empowers legal professionals by offering tools to streamline consultations, document preparation, and case management. Join a community of experts and grow your practice while simplifying legal services for clients.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Nyay Sahayak. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Get the sign up button and the signup section
+        const signupButton = document.getElementById('show-signup-btn');
+        const signupSection = document.getElementById('signup-lawyer');
+    
+        // Add click event to the signup button
+        signupButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            signupSection.style.display = 'block'; // Show the signup section
+    
+            // Optionally scroll to the signup section after it's shown
+            signupSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    
+</body>
+</html>

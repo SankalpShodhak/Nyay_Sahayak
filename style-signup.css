@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar img {
+    height: 100px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #FFC0CB;
+}
+
+.cta-btn {
+    padding: 10px 15px;
+    background-color: #FFC0CB;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #ff99b6;
+}
+
+/* Signup Section */
+.signup-lawyer {
+    padding: 100px 20px;
+    background-image: url('know-the-law.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    min-height: 100vh; /* Ensure it takes up the full viewport */
+    position: relative;
+    margin-top: 80px;
+}
+
+.signup-lawyer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional: Dark overlay to make text readable */
+    z-index: 1; /* Place overlay behind the form */
+}
+
+.signup-lawyer h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff; /* White text for visibility */
+    position: relative;
+    z-index: 2;
+}
+
+/* Signup Form */
+.signup-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(171, 155, 158, 0.8); /* Faint pink with transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 20px;
+    position: relative;
+    z-index: 2; /* Place the form above the background */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.form-group input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #FFC0CB;
+}
+
+.cta-btn {
+    padding: 12px 20px;
+    background-color: #FFC0CB;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+}
+
+.cta-btn:hover {
+    background-color: #ff99b6;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #FFC0CB;
+}
